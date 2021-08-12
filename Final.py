@@ -44,4 +44,14 @@ for i in range(2):  # Repeats twice for both rows
     names.goto(0, start)  # Moves to 2nd line
     start = start + 105  # Command for what start is
 
+meashoz= turtle.Turtle()
+meashoz.penup() # So turtle doesnt draw lines
+meashoz.goto(0, 80)  # Tells turtle where to start
+meashoz.forward(160)  # Move forward to first dot spot
+meashoz.pendown() #Puts pen down to draw line
+meashoz.forward(40)  # Move forward to middle of dots
+meashoz.write('0.5 Metres')  # Places Dot and color of dot
+meashoz.forward(120) # Moves to next dot
+
+
 turtle.done()
