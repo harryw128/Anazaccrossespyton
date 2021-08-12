@@ -44,24 +44,22 @@ for i in range(2):  # Repeats twice for both rows
     names.goto(0, start)  # Moves to 2nd line
     start = start + 105  # Command for what start is
 
-meash= turtle.Turtle()
-meash.penup() # So turtle doesnt draw lines
+meash = turtle.Turtle()
+meash.penup()  # So turtle doesnt draw lines
 meash.goto(0, 80)  # Tells turtle where to start
 meash.forward(160)  # Move forward to first dot spot
-meash.pendown() #Puts pen down to draw line
+meash.pendown()  # Puts pen down to draw line
 meash.forward(40)  # Move forward to middle of dots
 meash.write('0.5 Metres')  # Places Dot and color of dot
-meash.forward(120) # Moves to next dot
+meash.forward(80)  # Moves to next dot
 
-measv= turtle.Turtle()
-measv.penup() # So turtle doesnt draw lines
+measv = turtle.Turtle()
+measv.penup()  # So turtle doesnt draw lines
 measv.goto(150, 100)  # Tells turtle where to start
 measv.left(90)
 measv.pendown()
 measv.forward(40)
 measv.write("   0.5 Metres")
 measv.forward(50)
-
-
 
 turtle.done()
