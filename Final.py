@@ -23,7 +23,7 @@ for i in range(2):  # Loops twice so does 2 lines of dots
     for j in range(5):  # Loops 5 times to do 5 dots
         flag.penup()
         flag.forward(160)  # Move forward for dots
-        flag.dot(10)  # Places Dot
+        flag.dot(10, "red")  # Places Dot and color of dot
         flag.penup()  # Puts dot back up
 
     flag.goto(0, start)  # Tells turtle where to go for 2nd line
@@ -34,6 +34,7 @@ start = 205  # Where turtle starts
 number = 0
 names.penup()  # so doesn't do line
 names.goto(0, 105)  # Start point
+names.color('blue')  # text color
 for i in range(2):  # Repeats twice for both rows
     for j in range(5):  # Repeats 5 for 5 names per row
         names.forward(160)  # Spaces between names/dots
