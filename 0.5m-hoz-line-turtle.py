@@ -26,14 +26,10 @@ meas= turtle.Turtle()
 meas.penup() # So turtle doesnt draw lines
 meas.goto(0, 80)  # Tells turtle where to start
 meas.forward(160)  # Move forward to first dot spot
-for a in range(2):
+meas.pendown() #Puts pen down to draw line
+meas.forward(40)  # Move forward to middle of dots
+meas.write('0.5 Metres')  # Places Dot and color of dot
+meas.forward(100) # Moves to next dot's
 
-  meas.pendown() #Puts pen down to draw line
-  meas.forward(40)  # Move forward to middle of dots
-  meas.write('0.5 Metres')  # Places Dot and color of dot
-  meas.forward(120) # Moves to next dot's
-  meas.penup()
-  meas.goto(150,80)
-  meas.left(90)
 
 turtle.done()
