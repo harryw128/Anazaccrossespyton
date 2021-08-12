@@ -29,11 +29,11 @@ for i in range(2):  # Loops twice so does 2 lines of dots
     flag.goto(0, start)  # Tells turtle where to go for 2nd line
     start = start + 100  # Adds 100 so turtle goes higher
 
-names = turtle.Turtle()  # Name turtle
-start = 200  # Height Where turtle starts
+names = turtle.Turtle()  # Names turtle
+start = 200  # Where turtle starts
 number = 0
 names.penup()  # so doesn't do line
-names.goto(0, 100)  # Start point
+names.goto(0, 105)  # Start point
 for i in range(2):  # Repeats twice for both rows
     for j in range(5):  # Repeats 5 for 5 names per row
         names.forward(160)  # Spaces between names/dots
@@ -41,6 +41,6 @@ for i in range(2):  # Repeats twice for both rows
         number += 1
 
     names.goto(0, start)  # Moves to 2nd line
-    start = start + 100
+    start = start + 105  # Command for what start is
 
 turtle.done()
