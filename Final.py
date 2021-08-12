@@ -16,7 +16,7 @@ screen.setworldcoordinates(0, 0, WIDTH, HEIGHT)  # turtle boundaries
 
 flag = turtle.Turtle()  # Naming turtle
 
-start = 200
+start = 200 # Start point
 flag.penup()  # So turtle doesnt draw lines
 flag.goto(0, 100)  # Tells turtle where to start
 for i in range(2):  # Loops twice so does 2 lines of dots
@@ -56,10 +56,10 @@ meash.forward(80)  # Moves to next dot
 measv = turtle.Turtle()
 measv.penup()  # So turtle doesnt draw lines
 measv.goto(150, 100)  # Tells turtle where to start
-measv.left(90)
-measv.pendown()
-measv.forward(40)
-measv.write("   0.5 Metres")
-measv.forward(50)
+measv.left(90) # Turn so can go up
+measv.pendown()  # So draws lines
+measv.forward(40) # Forward to forward
+measv.write("   0.5 Metres") # Writes 0.5 metres
+measv.forward(50) # Move forward to next row
 
 turtle.done()
