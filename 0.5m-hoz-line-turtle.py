@@ -21,15 +21,14 @@ for i in range(2):  # Loops twice so does 2 lines of dots
     flag.goto(0, start)  # Tells turtle where to go for 2nd line
     start = start + 100  # Adds 100 so turtle goes higher
 
-meas= turtle.Turtle()
+meas = turtle.Turtle()
 
-meas.penup() # So turtle doesnt draw lines
+meas.penup()  # So turtle doesnt draw lines
 meas.goto(0, 80)  # Tells turtle where to start
 meas.forward(160)  # Move forward to first dot spot
-meas.pendown() #Puts pen down to draw line
+meas.pendown()  # Puts pen down to draw line
 meas.forward(40)  # Move forward to middle of dots
 meas.write('0.5 Metres')  # Places Dot and color of dot
-meas.forward(100) # Moves to next dot's
-
+meas.forward(100)  # Moves to next dot's
 
 turtle.done()

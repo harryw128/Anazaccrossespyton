@@ -21,8 +21,8 @@ for i in range(2):  # Loops twice so does 2 lines of dots
     flag.goto(0, start)  # Tells turtle where to go for 2nd line
     start = start + 100  # Adds 100 so turtle goes higher
 
-measv= turtle.Turtle()
-measv.penup() # So turtle doesnt draw lines
+measv = turtle.Turtle()
+measv.penup()  # So turtle doesnt draw lines
 measv.goto(150, 100)  # Tells turtle where to start
 measv.left(90)
 measv.pendown()
