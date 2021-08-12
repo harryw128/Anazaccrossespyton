@@ -1,5 +1,4 @@
 import turtle
-
 WIDTH, HEIGHT = 1400, 560
 
 screen = turtle.Screen()
