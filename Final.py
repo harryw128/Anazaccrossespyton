@@ -23,14 +23,14 @@ for i in range(2):  # Loops twice so does 2 lines of dots
     for j in range(5):  # Loops 5 times to do 5 dots
         flag.penup()
         flag.forward(160)  # Move forward for dots
-        flag.dot()  # Places Dot
+        flag.dot(10)  # Places Dot
         flag.penup()  # Puts dot back up
 
     flag.goto(0, start)  # Tells turtle where to go for 2nd line
     start = start + 100  # Adds 100 so turtle goes higher
 
 names = turtle.Turtle()  # Names turtle
-start = 200  # Where turtle starts
+start = 205  # Where turtle starts
 number = 0
 names.penup()  # so doesn't do line
 names.goto(0, 105)  # Start point
