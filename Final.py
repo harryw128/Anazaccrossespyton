@@ -37,22 +37,20 @@ for i in range(2): #Loops twice so does 2 lines of dots
     flag.goto(0, start) #Tells turtle where to go for 2nd line
     start = start + 100 #Adds 100 so turtle goes higher
 
-liz = turtle.Turtle()
-start=160
+names = turtle.Turtle() #Name turtle
+start=200 #Height Where turtle starts
 number = 0
-liz.penup()
-liz.goto(0,50)
-for i in range(2):
-    for j in range (5):
-        liz.forward(160)
-        liz.write(crossnames[number])
+names.penup() #so doesn't do line
+names.goto(0,50) #Start point
+for i in range(2): #Repeates twice for both rows
+    for j in range (5): # Repeats 5 for 5 names per row
+        names.forward(160) #Spaces between names/dots
+        names.write(crossnames[number]) #Sorts list so names are spread out
         number += 1
 
-
-
-
-    liz.goto(0, start)
+    names.goto(0, start) # Moves to 2nd line
     start = start + 50
+
 
 
 
