@@ -1,15 +1,16 @@
 import turtle
+#opens crosses fill and read lines
 with open('crosses.txt') as f:
     lines = f.readlines()
 print(lines)
+#prints out names from txt file
 
-new_list = [s.replace("\n", "") for s in lines]
+#removes /n after all names
+crossnames = [s.replace("\n", "") for s in lines]
 
-print(new_list)
+print(crossnames)
+#prints out new list
 
-names = sorted(new_list)
-
-print(names)
 
 
 WIDTH, HEIGHT = 1400, 560
@@ -42,7 +43,7 @@ liz.goto(0,50)
 for i in range(2):
     for j in range (5):
         liz.forward(160)
-        liz.write(names[number])
+        liz.write(crossnames[number])
         number += 1
 
 
